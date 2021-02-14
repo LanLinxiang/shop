@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: llxmall-coupon
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: c917aea5-3b30-4849-a2dd-74f997826be1
+        file-extension: yaml
+        group: dev
+        ext-config:
+        - data-id: datasource.yml
+          group: dev
+          refresh: true
+        - data-id: mybatis.yml
+          group: dev
+          refresh: true
+        - data-id: other.yml
+          group: dev
+          refresh: true
+
+
+
+
+#      spring.application.name=llxmall-coupon
+#
+#      spring.cloud.nacos.config.server-addr=127.0.0.1:8848
+#      spring.cloud.nacos.config.namespace=b5afecf9-bc11-414d-8eed-3bcf8c64e8e1
+#
+#      spring.cloud.nacos.config.extension-configs=
